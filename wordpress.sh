@@ -5,7 +5,7 @@ USERNAME='devopscilsy'
 PASSWORD='1234567890'
 DBIP='192.168.100.103'
 
-echo -e "${G}Downloading Neccesary Package${NC}"
+echo -e "${G}starting provision!${NC}"
 sudo su
 echo -e "${G}update and upgrade entire system${NC}"
 sudo apt-get -y update > /dev/null 2>&1
@@ -33,5 +33,5 @@ echo -e "${G}copy config file for hosts${NC}"
 sudo cp -r /var/sharedfolder/config/hosts /etc/hosts > /dev/null 2>&1
 echo -e "${G}restarting all services${NC}"
 service nginx restart /dev/null 2>&1
-echo -e "${G}provisioning complete!${NC}"
+echo -e "${G}provision completed!${NC}"
 exit 0
